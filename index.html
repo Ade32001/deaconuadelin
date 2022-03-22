@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portofoliu Ade_3</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c598a44366.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div class="intro">
+<div class="navigatie">
+  <ul>
+     <li class="list">
+       <a href="#">
+         <span class="icon"> 
+          <ion-icon name="card-outline"></ion-icon>
+         </span>
+         <span class="text"> Profil </span>
+       </a>
+      </li>
+      <li class="list">
+        <a href="#sec2">
+          <span class="icon">
+            <ion-icon name="star-half-outline"></ion-icon> 
+          </span>
+          <span class="text"> Skills </span>
+        </a>
+       </li>
+       <li class="list">
+        <a href="#sec4">
+          <span class="icon">
+            <ion-icon name="call-outline"></ion-icon>
+           </span>
+          <span class="text"> Contact </span>
+        </a>
+       </li>
+   </ul>
+</div>
+<div style="height:300px;display: flex;justify-content: center; align-items: center;">
+  <p style="padding: 0;margin:0;letter-spacing: 5px;"class="culoarep litera"> Deaconu Adelin</p>
+</div>
+<div class="carte">
+  <div class="imagine">
+    <img src="ade20012001.jpg">
+    <img src="adeprofil.jpg">
+  </div>
+  <div class="carte2">
+    <h2 class="culoareh2">Nume:</h2>
+    <p class="culoarep">Deaconu Adelin-Ionut</p>
+    <h2 class="culoareh2">Data Nastere:</h2>
+    <p class="culoarep">03/01/2001</p>
+    <h2 class="culoareh2">Adresa:</h2>
+    <p class="culoarep">Com.Bumbesti-Pitic<br>Str.Mare a Unirii<br>Nr.47</p>
+    <h2 class="culoareh2">Sex:</h2>
+    <p class="culoarep">Masculin</p>
+    <h2 class="culoareh2">Permis de Conducere:</h2>
+    <p class="culoarep">Categoria B</p>
+    <h2 class="culoareh2">Limba Engleaza:</h2>
+    <p class="culoarep">70%</p>
+    <a href="#sec2"><span style="color:white; font-size: 20px;">Skills:</span> CSS - HTML - JavaScript - C++ - Pyton</a>
+  </div>
+</div>
+<button id="btn" onclick="play()">Porneste Muzica</button>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+ <div class="slideshow" id="sec2">
+  <div class="content">
+    <div class="content-carusel">
+      <figure class="shadow">
+        <h1>CSS</h1>
+        <div style="background:linear-gradient(rgb(0, 162, 255),rgb(0, 40, 58));" class="css"><img src="css.png"></div>
+        <div class="progres">
+          <div class="progrescss"></div>
+          <h2 style="position: absolute;top: -135%;font-size: 12px;right: -12%;color:#fff;">90%</h2>
+        </div>
+      </figure>
+      <figure class="shadow">
+        <h1>HTML</h1>
+        <div style="background:linear-gradient(rgb(255, 174, 0),rgb(58, 42, 0));" class="css"><img src="html.png"></div>
+        <div class="progres">
+          <div class="progreshtml"></div>
+          <h2 style="position: absolute;top: -135%;font-size: 12px;right: -12%;color:#fff;">70%</h2>
+        </div>
+      </figure>
+      <figure class="shadow">
+        <h1>JavaScript</h1>
+        <div style="background:linear-gradient(rgb(255, 251, 0),rgb(58, 57, 0));" class="css"><img src="js.png"></div>
+        <div class="progres">
+          <div class="progresjava"></div>
+          <h2 style="position: absolute;top: -135%;font-size: 12px;right: -12%;color:#fff;">30%</h2>
+        </div>
+      </figure>
+      <figure class="shadow">
+        <h1>Pyton</h1>
+        <div style="background:linear-gradient(rgb(30, 255, 0),rgb(14, 58, 0));" class="css"><img src="pyton.png"></div>
+        <div class="progres">
+          <div class="progrespyton"></div>
+          <h2 style="position: absolute;top: -135%;font-size: 12px;right: -12%;color:#fff;">60%</h2>
+        </div>
+      </figure>
+      <figure class="shadow">
+        <h1>C++</h1>
+        <div style="background:linear-gradient(rgb(4, 0, 255),rgb(1, 0, 58));" class="css"><img src="c++.png"></div>
+        <div class="progres">
+          <div class="progrescc"></div>
+          <h2 style="position: absolute;top: -135%;font-size: 12px;right: -12%;color:#fff;">50%</h2>
+        </div>
+      </figure>
+      <figure ><img src="adeprofil.jpg"></figure>
+    </div>
+  </div>
+</div>
+
+<div class="contactform" id="sec4">
+  <div class="container">
+    <h2>Locatie:</h2>
+    <div class="carte-umbra">
+      <div class="iconita"><i class="fas fa-map-marked"></i></div>
+      <p>Com.Bumbesti-Pitic<br>Str.Mare a Unirii<br>Nr.47</p>
+    </div>
+    <h2>Email:</h2>
+    <div class="carte-umbra">
+      <div class="iconita"><i class="fas fa-envelope"></i></div>
+      <p>adelin.deaconu@yahoo.ro</p>
+    </div>
+    <h2>Telefon:</h2>
+    <div class="carte-umbra">
+      <div class="iconita"><i class="fas fa-phone-alt"></i></div>
+      <p>0799050715</p>
+    </div>
+  </div>
+  <iframe class="harta" src="https://www.google.com/maps/d/embed?mid=1IjNY0zvHg-bqhH5KC4oBHOCCxunCaoXS&ehbc=2E312F" width="900" height="600"></iframe>
+</div>
+
+<h2 style="color: aliceblue;font-family: monospace; justify-content: center; font-size: 30px; margin-left: 37%;">O mica animatie creata in CSS</h2>
+<div class="clasa" id="sec3">
+ <div class="scene">
+  <div class="floor"></div>
+  <div class="cube">
+    <div class="front"></div>
+    <div class="back"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="top"></div>
+    <div class="bottom"></div>
+  </div>
+  <div class="ball"></div>
+ </div> 
+</div>
+
+<script type="text/javascript" src="java.js"></script>
+</body>
+</html>
