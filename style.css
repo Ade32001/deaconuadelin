@@ -1,0 +1,578 @@
+
+::-webkit-scrollbar{
+  width:10px;
+}
+::-webkit-scrollbar-track{
+background: #fff;
+}
+::-webkit-scrollbar-thumb{
+  background:linear-gradient(rgb(143, 0, 0),rgb(245, 0, 0))
+}
+:root{
+  --box-color: rgba(182, 0, 0, 0.644);
+  --rotateSpeed:10s;
+  --bounceSpeed:2s;
+  scroll-behavior: smooth;
+}
+body{
+  background-color:#00001b;
+}
+
+.litera .active{
+  color:rgb(0, 175, 0);
+  transform: scale(2.5) rotatez(20deg);
+}
+.culoareh2{
+  color:rgb(255, 255, 255);
+  font-size: 15px;
+  transition: 0.25s;
+}
+.litera{
+  color:rgb(206, 117, 0);
+  transition: 0.1s;
+  display: inline-block;
+  letter-spacing: 2px;
+  font-size:90px;
+  font-family: 'Palette Mosaic', cursive;
+}
+#btn{
+  width: 300px;
+  margin-top: 40px;
+  margin-left: 42.1%;
+  height: 60px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  font-family: monospace;
+  background: radial-gradient(red 5%, #000000);
+}
+.intro{
+  background-color:#00001b;
+  min-height: 100vh;
+}
+.navigatie{
+  width: 300px;
+  height: 70px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navigatie ul {
+ display: flex;
+ width: 250px;
+    }
+.navigatie ul li{
+ position: relative;
+ list-style: none;
+ width: 70px;
+ height: 70px;
+ z-index: 1;
+}
+.navigatie ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    }
+.navigatie ul li a{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+   text-align: center;
+   font-weight: 300;
+ }
+ .navigatie ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 70px;
+    font-size: 1.5em;
+    transition: 0.5s;
+    text-align: center;
+    color:#1c1d20;
+  }
+  .navigatie ul li:hover a .icon{
+    transform: translateY(-50px);
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(192, 0, 0);
+    box-shadow: 2px 2px 5px red,
+                -4px -4px 20px red,
+                10px 10px 70px red;
+    opacity: 1;
+    transition: 0.5s;
+  }
+  .navigatie ul li a .text{
+    position: absolute;
+    opacity: 0;
+    color:#1c1d20;
+    letter-spacing: 0.2em;
+    transition: 0.5s;
+    font-family: 'Courier New', Courier, monospace;
+    transition: translateY(20px);
+    font-weight: 200;
+  }
+  .navigatie ul li:hover a .text{
+    opacity: 1;
+    transition: translatey(10px);
+  }
+.carte{
+  margin-top: 30px;
+  width: 500px;
+  display: flex;
+  height: 700px;
+  margin-left: auto;
+  transform-style: preserve-3d;
+  margin-right: auto;
+  background: #fff;
+  transform: perspective(1000px);
+  transition: 1s;
+}
+.carte .imagine{
+width: 100%;
+position: absolute;
+height: 100%;
+transform-origin: left;
+z-index: 1;
+
+transition: 1s;
+transform-style: preserve-3d;
+
+}
+.carte .imagine img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  transition: 1s;
+  backface-visibility: hidden;
+  object-fit: cover;
+  transform-style: preserve-3d;
+}
+.carte:hover .imagine{
+  transform:rotateY(-180deg);
+  
+}
+.carte img:nth-child(2){
+  transform:rotateY(180deg);
+  
+}
+.carte:hover{
+  transform: translatex(50%);
+}
+.carte .carte2{
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(66, 74, 84);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  transition: 1s;
+  box-shadow: inset 480px 0px 10px rgba(0, 0, 0, 0.596);
+}
+.carte:hover .carte2{
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.76);
+}
+.carte .carte2 p{
+  font-family: monospace;
+  color:orange;
+  font-size:15px;
+  text-shadow: 5px 0px 5px rgba(0, 0, 0, 0.795);
+}
+.carte .carte2 h2{
+  text-shadow: 5px 0px 5px rgba(0, 0, 0, 0.795);
+  color:rgb(172, 172, 172);
+  font-size:20px;
+  margin-top:3%;
+  margin-bottom: 3%;
+  font-family: monospace;
+}
+.carte .carte2 a{
+  color:rgb(34, 0, 0);
+  text-decoration: none;
+  font-family: cursive;
+  text-shadow: 5px 0px 5px #000;
+}
+.contactform{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  background:linear-gradient(rgba(0, 53, 114, 0.575),rgba(0, 58, 134, 0.308)), url("city.jpg");
+  align-items: center;
+}
+.iconita{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+.container{
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.753);
+  transition: 1s;
+  width: 600px;
+  height: 600px;
+  z-index: 2;
+  margin-left: 5vh;
+  box-shadow: inset 5px 5px 15px rgba(0, 0, 0,0.4),
+  inset -5px -5px 15px rgba(255,255,255,0.1),
+  5px 5px 15px rgba(0, 0, 0, 0.4),
+  -5px -5px 15px rgba(255,255,255,0.1);
+}
+.container h2{
+  margin-top: 12px;
+  margin-left: -330px;
+  font-family: monospace;
+  color: rgb(255, 255, 255);
+}
+.container p{
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.harta{
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .carte-umbra{
+  width: 400px;
+  margin:5px;
+  height: 100px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+
+  box-shadow: inset 5px 5px 15px rgba(0, 0, 0,0.4),
+  inset -5px -5px 15px rgba(255,255,255,0.1),
+  5px 5px 15px rgba(0, 0, 0, 0.4),
+  -5px -5px 15px rgba(255,255,255,0.1);   
+  transition: 1s;
+
+}
+.slideshow{
+  margin: 0 auto;
+  padding-top: 10vh;
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: #00001b;
+}
+.content{
+  margin:auto;
+  width: 280px;
+  perspective: 1000px;
+  position: relative;
+  padding-top: 80px;
+}
+.content-carusel{
+animation: rotatie 8s linear infinite;
+transform-style: preserve-3d;
+}
+.content-carusel:hover{
+ animation-play-state: paused;
+ cursor: pointer;
+}
+.content-carusel figure{
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+  position: absolute;
+}
+.css{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content:center ;
+  top:-20px
+}
+.content-carusel img{
+  width: 100%;
+  image-rendering: auto;
+  transition: all 300ms;
+  filter: drop-shadow(5px 5px 4px rgb(0, 0, 0));
+  height: 100%;
+}
+.css img{
+  height: 70%;
+  position: absolute;
+  display: flex;
+  width: auto;
+  margin-top: 13%;
+}
+.shadow h1{
+  text-decoration: none;
+  font-size: 1rem;
+  color: #000000;
+  margin-top:2px;
+  font-family: 'Righteous', cursive;
+  position: absolute;
+}
+.shadow:hover img{
+  height: 60%;
+  animation:rotatieimg 1s linear;
+}
+.shadow:hover h1{
+  filter: drop-shadow(10px 5px 3px black);
+}
+@keyframes rotatieimg{
+  100%{
+    transform:rotatey(360deg);
+  }
+}
+.progres{
+  background: #fff;
+  width: 87%;
+  position: absolute;
+  bottom: 10px;
+  visibility: hidden;
+  margin-left: -30px;
+  height: 5%;
+}
+.progres .progrescss{
+  background: rgb(0, 174, 255);
+  width: 90%;
+  height: 100%;
+  margin-left: 0px;
+}
+.progres .progresjava{
+  background: rgb(229, 255, 0);
+  width: 30%;
+  height: 100%;
+  margin-left: 0px;
+}
+.progres .progrescc{
+  background: rgb(38, 0, 255);
+  width: 50%;
+  height: 100%;
+  margin-left: 0px;
+}
+.progres .progrespyton{
+  background: rgb(21, 255, 0);
+  width: 60%;
+  height: 100%;
+  margin-left: 0px;
+}
+.progres .progreshtml{
+  background: rgb(255, 196, 0);
+  width: 70%;
+  height: 100%;
+  margin-left: 0px;
+}
+.shadow:hover .progres{
+  visibility: visible;
+ }
+ .shadow:hover .progrescss{
+  animation:  animatieprogres1 1s linear;
+ }
+ .shadow:hover .progresjava{
+  animation:  animatieprogres4 1s linear;
+ }
+ .shadow:hover .progreshtml{
+  animation:  animatieprogres3 1s linear;
+ }
+ .shadow:hover .progrescc{
+  animation:  animatieprogres2 1s linear;
+ }
+ .shadow:hover .progrespyton{
+  animation:  animatieprogres5 1s linear;
+ }
+ @keyframes animatieprogres1{
+   0%{width: 0%;}
+   100%{width: 90%;}
+ }
+ @keyframes animatieprogres4{
+  0%{width: 0%;}
+  100%{width: 30%;}
+}
+ @keyframes animatieprogres2{
+  0%{width: 0%;}
+  100%{width: 50%;}
+}
+@keyframes animatieprogres3{
+  0%{width: 0%;}
+  100%{width: 70%;}
+}
+@keyframes animatieprogres5{
+  0%{width: 0%;}
+  100%{width: 60%;}
+}
+.shadow{
+  position: absolute;
+  transform-style: preserve-3d;
+  justify-content: center;
+  display: flex;
+  box-shadow: inset 5px 5px 15px rgba(0, 0, 0,1),
+  inset -5px -5px 15px rgba(255,255,255,0.4),
+  5px 5px 15px rgba(0, 0, 0, 1),
+  -5px -5px 15px rgba(255,255,255,0.4); 
+
+}
+.content-carusel figure:nth-child(1){
+  transform: rotateY(0deg) translatez(500px);
+}
+.content-carusel figure:nth-child(2){
+  transform: rotateY(72deg) translatez(500px);
+}
+.content-carusel figure:nth-child(3){
+  transform: rotateY(144deg) translatez(500px);
+}
+.content-carusel figure:nth-child(4){
+  transform: rotatey(216deg) translatez(500px);
+}
+.content-carusel figure:nth-child(5){
+  transform: rotateY(288deg) translatez(500px);
+}
+.content-carusel figure:nth-child(6){
+  transform: rotateY(0) translatez(0);
+  -webkit-box-reflect: below 10px linear-gradient(transparent 80%, rgb(252, 252, 252));
+}
+
+@keyframes rotatie{
+  0%{
+     transform: rotatex(0deg);
+  }
+  100%{
+    transform: rotatey(360deg) ;
+  }
+}
+.clasa{
+  justify-content: center;
+  background: rgb(0, 0, 0);
+  align-items: center;
+  margin-top: 20px;
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+  font-size: 50px;
+  perspective: 10em;
+  perspective-origin: 50% calc(50% - 4em);
+}
+.scene{
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate var(--rotateSpeed) infinite linear;
+}
+
+@keyframes rotate{
+  to{ transform: rotateY(360deg);}
+}
+
+.ball{
+  width: 1.5em;
+  position:absolute;
+  height: 1.5em;
+  bottom:2em;
+  box-shadow: 0px 0px 10px white;
+  left: -.25em;
+  border-radius: 50%;
+  background-image: url(socer.jpg);
+  background-size: cover;
+  animation: rotate var(--rotateSpeed) infinite linear reverse, bounce var(--bounceSpeed) infinite ease-out, rotatieminge 3s infinite linear;
+}
+@keyframes rotatieminge{
+  0%{background-position:100%;
+  }
+  100%{
+    background-position: 0%;
+  }
+}
+@keyframes bounce{
+  0%,100%{bottom: 1em;}
+  50%{bottom:4em;animation-timing-function: ease-in;}
+}
+.cube{
+  width: 3em;
+  height: 3em;
+  bottom:-1em;
+  transform-style: preserve-3d;
+  left: -1em;
+  position: absolute;
+  animation: cubeheight var(--bounceSpeed) linear infinite;
+}
+@keyframes cubeheight{
+  0%,100%{height: 2em;}
+  10%, 90%{height: 3em;}
+}
+.front, .back, .left, .right{
+position: absolute;
+background: var(--box-color);
+box-shadow: inset 0px 0px 1em black;
+width: 100%;
+height: 100%;
+}
+.cube .front{
+  transform: translateZ(1.5em);
+}
+.cube .back{
+  transform: translateZ(-1.5em);
+}
+.cube .left{
+  transform: translatex(1.5em) rotateY(90deg);
+}
+.cube .right{
+  transform: translatex(-1.5em) rotateY(-90deg);
+}
+.top{
+  position: absolute;
+  box-shadow: inset 0px 0px .5em black;
+  background: var(--box-color);
+  width: 3em;
+  transform: translatey(-1.5em) rotatex(90deg);
+  height: 3em;
+}
+.top::before{
+  content: '';
+  position: absolute;
+  background-image: radial-gradient(#0008,#0000 40%);
+  width: 3em;
+  height: 3em;
+  animation: ballshadow var(--bounceSpeed) infinite ease-out;
+
+}
+@keyframes ballshadow{
+  0%,100%{transform: scale(1); opacity: 1;}
+  50%{transform: scale(1.5); opacity:0.5; animation-timing-function: ease-in;}
+}
+.bottom{
+  position: absolute;
+  background: var(--box-color);
+  box-shadow: 0 0 1em black;
+  width: 3em;
+  transform: translateY(1.5em) rotateX(90deg);
+  height: 3em;
+}
+.floor{
+  background-image: 
+  radial-gradient(rgba(0, 0, 0, 0.253),rgb(0 0 0) 60%),
+  url(wood.jpg);
+  width: 20em;
+  transform: translate(-50%,-50%) rotateX(90deg);
+  top:1em;
+  position: absolute;
+  height: 20em;
+  background-size: cover;
+}
+  
