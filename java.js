@@ -8,12 +8,12 @@ buton.addEventListener('click', function play() {
         if(count==0)
     {
         audio.play();
-        buton.textContent='Opreste Muzica';
+        buton.textContent='Stop Music';
         count=1;
     }
     else{
     audio.pause();
-    buton.textContent='Reporneste Muzica';
+    buton.textContent='ReStart Music';
     count=0;
     }
 }
@@ -32,11 +32,11 @@ letters.forEach(letter => {
 p.innerHTML=html;
 
 const jslitera = document.querySelectorAll(".litera")
-jslitera.forEach(cod =>{
-    cod.addEventListener("mouseover",function(event){
+jslitera.forEach(nodul =>{
+    nodul.addEventListener("mouseover",function(event){
         this.classList.add("active")
     })
-    cod.addEventListener("mouseout",function(event){
+    nodul.addEventListener("mouseout",function(event){
         this.classList.remove("active")
     })
 })
