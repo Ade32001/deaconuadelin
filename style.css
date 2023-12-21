@@ -33,7 +33,7 @@ body{
   display: inline-block;
   letter-spacing: 2px;
   font-size:90px;
-  font-family: 'Palette Mosaic', cursive;
+  font-family: 'Monospace', cursive;
 }
 #btn{
   width: 300px;
@@ -232,8 +232,8 @@ transform-style: preserve-3d;
   justify-content: center;
   background: rgba(0, 0, 0, 0.753);
   transition: 1s;
-  width: 600px;
-  height: 600px;
+  width: 800px;
+  height: 800px;
   z-index: 2;
   margin-left: 5vh;
   box-shadow: inset 5px 5px 15px rgba(0, 0, 0,0.4),
@@ -258,7 +258,7 @@ transform-style: preserve-3d;
   margin-right: auto;
 }
 .container .carte-umbra{
-  width: 400px;
+  width: 500px;
   margin:5px;
   height: 100px;
   display: flex;
@@ -353,7 +353,7 @@ transform-style: preserve-3d;
 }
 .progres .progrescss{
   background: rgb(0, 174, 255);
-  width: 90%;
+  width: 70%;
   height: 100%;
   margin-left: 0px;
 }
@@ -365,13 +365,13 @@ transform-style: preserve-3d;
 }
 .progres .progrescc{
   background: rgb(38, 0, 255);
-  width: 50%;
+  width: 80%;
   height: 100%;
   margin-left: 0px;
 }
 .progres .progrespyton{
   background: rgb(21, 255, 0);
-  width: 60%;
+  width: 80%;
   height: 100%;
   margin-left: 0px;
 }

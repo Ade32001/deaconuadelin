@@ -17,7 +17,7 @@
 <div class="navigatie">
   <ul>
      <li class="list">
-       <a href="#">
+       <a href="#sec1">
          <span class="icon"> 
           <ion-icon name="card-outline"></ion-icon>
          </span>
@@ -42,31 +42,33 @@
        </li>
    </ul>
 </div>
-<div style="height:300px;display: flex;justify-content: center; align-items: center;">
+<div style="height:200px;display: flex;justify-content: center; align-items: center;" id="sec1">
   <p style="padding: 0;margin:0;letter-spacing: 5px;"class="culoarep litera"> Deaconu Adelin</p>
 </div>
+<div >
 <div class="carte">
   <div class="imagine">
     <img src="ade20012001.jpg">
     <img src="adeprofil.jpg">
   </div>
   <div class="carte2">
-    <h2 class="culoareh2">Nume:</h2>
+    <h2 class="culoareh2">Name:</h2>
     <p class="culoarep">Deaconu Adelin-Ionut</p>
-    <h2 class="culoareh2">Data Nastere:</h2>
+    <h2 class="culoareh2">Birth Date:</h2>
     <p class="culoarep">03/01/2001</p>
-    <h2 class="culoareh2">Adresa:</h2>
-    <p class="culoarep">Com.Bumbesti-Pitic<br>Str.Mare a Unirii<br>Nr.47</p>
+    <h2 class="culoareh2">Adress:</h2>
+    <p class="culoarep">Strada Lugojului, 29 ,Timișoara</p>
     <h2 class="culoareh2">Sex:</h2>
-    <p class="culoarep">Masculin</p>
-    <h2 class="culoareh2">Permis de Conducere:</h2>
-    <p class="culoarep">Categoria B</p>
-    <h2 class="culoareh2">Limba Engleaza:</h2>
-    <p class="culoarep">70%</p>
-    <a href="#sec2"><span style="color:white; font-size: 20px;">Skills:</span> CSS - HTML - JavaScript - C++ - Pyton</a>
+    <p class="culoarep">Masculine</p>
+    <h2 class="culoareh2">Driver License:</h2>
+    <p class="culoarep">Class B</p>
+    <h2 class="culoareh2">English Language:</h2>
+    <p class="culoarep">80%</p>
+    <a href="#sec2"><span style="color:white; font-size: 20px;">Skills:</span> Embedded C - Pyton - JavaScript - CSS - HTML</a>
   </div>
 </div>
-<button id="btn" onclick="play()">Porneste Muzica</button>
+<button id="btn" onclick="play()">Start Music</button>
+</div>
 </div>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -81,7 +83,7 @@
         <div style="background:linear-gradient(rgb(0, 162, 255),rgb(0, 40, 58));" class="css"><img src="css.png"></div>
         <div class="progres">
           <div class="progrescss"></div>
-          <h2 style="position: absolute;top: -135%;font-size: 12px;right: -12%;color:#fff;">90%</h2>
+          <h2 style="position: absolute;top: -135%;font-size: 12px;right: -12%;color:#fff;">70%</h2>
         </div>
       </figure>
       <figure class="shadow">
@@ -105,15 +107,15 @@
         <div style="background:linear-gradient(rgb(30, 255, 0),rgb(14, 58, 0));" class="css"><img src="pyton.png"></div>
         <div class="progres">
           <div class="progrespyton"></div>
-          <h2 style="position: absolute;top: -135%;font-size: 12px;right: -12%;color:#fff;">60%</h2>
+          <h2 style="position: absolute;top: -135%;font-size: 12px;right: -12%;color:#fff;">80%</h2>
         </div>
       </figure>
       <figure class="shadow">
-        <h1>C++</h1>
-        <div style="background:linear-gradient(rgb(4, 0, 255),rgb(1, 0, 58));" class="css"><img src="c++.png"></div>
+        <h1>Embedded C</h1>
+        <div style="background:linear-gradient(rgb(4, 0, 255),rgb(1, 0, 58));" class="css"><img src="c_logo.png"></div>
         <div class="progres">
           <div class="progrescc"></div>
-          <h2 style="position: absolute;top: -135%;font-size: 12px;right: -12%;color:#fff;">50%</h2>
+          <h2 style="position: absolute;top: -135%;font-size: 12px;right: -12%;color:#fff;">80%</h2>
         </div>
       </figure>
       <figure ><img src="adeprofil.jpg"></figure>
@@ -123,26 +125,31 @@
 
 <div class="contactform" id="sec4">
   <div class="container">
-    <h2>Locatie:</h2>
+    <h2>Location:</h2>
     <div class="carte-umbra">
       <div class="iconita"><i class="fas fa-map-marked"></i></div>
-      <p>Com.Bumbesti-Pitic<br>Str.Mare a Unirii<br>Nr.47</p>
+      <p>Strada Lugojului, 29 ,Timișoara</p>
     </div>
     <h2>Email:</h2>
     <div class="carte-umbra">
       <div class="iconita"><i class="fas fa-envelope"></i></div>
       <p>adelin.deaconu@yahoo.ro</p>
     </div>
-    <h2>Telefon:</h2>
+    <h2>Telephone:</h2>
     <div class="carte-umbra">
       <div class="iconita"><i class="fas fa-phone-alt"></i></div>
       <p>0799050715</p>
     </div>
+    <h2>LinkedIn:</h2>
+    <div class="carte-umbra">
+      <div class="iconita"><ion-icon name="logo-linkedin"></ion-icon></div>
+      <p>linkedin.com/in/adelin-deaconu/</p>
+    </div>
   </div>
-  <iframe class="harta" src="https://www.google.com/maps/d/embed?mid=1IjNY0zvHg-bqhH5KC4oBHOCCxunCaoXS&ehbc=2E312F" width="900" height="600"></iframe>
+  <iframe class="harta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.3098469626248!2d21.255157176747506!3d45.76498031331919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4745676c0931988f%3A0x4fc5a6be265c6184!2sStrada%20Lugojului%2029%2C%20Timi%C8%99oara!5e0!3m2!1sen!2sro!4v1703196633381!5m2!1sen!2sro" width="900" height="800"></iframe>
 </div>
 
-<h2 style="color: aliceblue;font-family: monospace; justify-content: center; font-size: 30px; margin-left: 37%;">O mica animatie creata in CSS</h2>
+<h2 style="color: aliceblue;font-family: monospace; justify-content: center; font-size: 30px; margin-left: 37%;">A little show of skills in CSS</h2>
 <div class="clasa" id="sec3">
  <div class="scene">
   <div class="floor"></div>
