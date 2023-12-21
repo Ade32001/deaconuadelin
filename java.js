@@ -1,6 +1,6 @@
 const audio= new Audio();
  audio.src="./muzica.mp3"
- audio.volume=0.1;
+ audio.volume=0.3;
 var count=0;
 
 var buton = document.getElementById('btn');
