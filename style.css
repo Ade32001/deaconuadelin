@@ -9,7 +9,7 @@ background: #fff;
   background:linear-gradient(rgb(143, 0, 0),rgb(245, 0, 0))
 }
 :root{
-  --box-color: rgba(182, 0, 0, 0.644);
+  --box-color: rgba(231, 1, 1, 0.644);
   --rotateSpeed:10s;
   --bounceSpeed:2s;
   scroll-behavior: smooth;
@@ -19,7 +19,7 @@ body{
 }
 
 .litera .active{
-  color:rgb(0, 175, 0);
+  color:rgb(230, 0, 0);
   transform: scale(2.5) rotatez(20deg);
 }
 .culoareh2{
@@ -28,7 +28,7 @@ body{
   transition: 0.25s;
 }
 .litera{
-  color:rgb(206, 117, 0);
+  color:orange;
   transition: 0.1s;
   display: inline-block;
   letter-spacing: 2px;
@@ -64,6 +64,7 @@ body{
 }
 .navigatie ul {
  display: flex;
+ margin-left: -14%;
  width: 250px;
     }
 .navigatie ul li{
@@ -140,6 +141,20 @@ body{
   transform: perspective(1000px);
   transition: 1s;
 }
+.carte22 {
+  width: 400px;
+  margin-bottom: 30px;
+  display: inline-flex;
+  height: 400px;
+  transform-style: preserve-3d;
+  background: #fff;
+  margin-left: 20%;
+  margin-right: auto;
+  transform: perspective(1000px);
+  transition: 1s;
+  justify-content: center;
+  align-items: center; /* Adjusted alignment property to center */
+}
 .carte .imagine{
 width: 100%;
 position: absolute;
@@ -202,11 +217,132 @@ transform-style: preserve-3d;
   font-family: monospace;
 }
 .carte .carte2 a{
-  color:rgb(34, 0, 0);
+  color:rgb(245, 159, 0);
   text-decoration: none;
   font-family: cursive;
   text-shadow: 5px 0px 5px #000;
 }
+
+
+
+.imagine2{
+  display: flex;
+  flex-direction: row;
+  margin-right: 30%;
+  width: 80px;
+  height: 80px;
+}
+.imagine2 img{
+  width: 100%;
+  height: 100%;
+  top:0;
+  padding-right: 20px;
+  left: 0;
+  transition: 1s;
+  backface-visibility: hidden;
+  object-fit: cover;
+  transform-style: preserve-3d;
+}
+
+.carte22 .imagine1{
+  width: 80px;
+  position: relative;
+  height: 80px;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s;
+  transform-style: preserve-3d;
+  }
+.carte22 .imagine1 img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  transition: 1s;
+  backface-visibility: hidden;
+  object-fit: cover;
+  transform-style: preserve-3d;
+}
+.carte22:hover .imagine1{
+  transform:rotateY(-180deg);
+  
+}
+.carte22 .imagine{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s;
+  transform-style: preserve-3d;
+  }
+  .carte22 .imagine img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    transition: 1s;
+    backface-visibility: hidden;
+    object-fit: cover;
+    transform-style: preserve-3d;
+  }
+  .carte22:hover .imagine{
+    transform:rotateY(-180deg);
+    
+  }
+  .carte22 .imagine img:nth-child(2){
+    transform:rotateY(180deg);
+    
+  }
+  .carte22 .imagine1 img:nth-child(2){
+    transform:rotateY(180deg);
+    
+  }
+  .carte22:hover{
+    transform: translatex(50%);
+  }
+  .carte22 .carte2{
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(66, 74, 84);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    transition: 1s;
+    box-shadow: inset 480px 0px 10px rgba(0, 0, 0, 0.596);
+  }
+  .carte22:hover .carte2{
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.76);
+  }
+  .carte22 .carte2 p{
+    font-family: monospace;
+    color:orange;
+    font-size:15px;
+    text-shadow: 5px 0px 5px rgba(0, 0, 0, 0.795);
+  }
+  .carte22 .carte2 h2{
+    text-shadow: 5px 0px 5px rgba(0, 0, 0, 0.795);
+    color:rgb(172, 172, 172);
+    font-size:20px;
+    margin-top:3%;
+    margin-bottom: 3%;
+    font-family: monospace;
+  }
+  .carte22 .carte2 a{
+    color:rgb(245, 159, 0);
+    text-decoration: none;
+    font-family: cursive;
+    text-shadow: 5px 0px 5px #000;
+  }
+
+
+
+
+
+
 .contactform{
   min-height: 100vh;
   width: 100%;
