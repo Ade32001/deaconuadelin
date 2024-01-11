@@ -711,4 +711,35 @@ height: 100%;
   height: 20em;
   background-size: cover;
 }
-  
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #ff0000; /* Red background color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.7); /* Glow effect */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the glow effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#scrollToTopBtn i {
+  margin-top: 9px;
+  margin-left: 11px;
+  font-size: 20px;
+}
+
+#scrollToTopBtn:hover {
+  box-shadow: 0 0 20px rgba(255, 0, 0, 1); /* Increase glow on hover */
+}
+
+
